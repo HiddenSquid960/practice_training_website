@@ -1,14 +1,18 @@
 :root {
   --main-padding: 5rem;
   --title-font-size: 3rem;
-  --description-font-size: 1.5rem;
+  --description-font-size: 1.25rem;
+  --primary-color: #2c3e50; /* Dark Blue */
+  --secondary-color: #34495e; /* Darker Blue */
+  --background-color: #ecf0f1; /* Light Gray */
+  --font-family: 'Arial', sans-serif;
 }
 
 @media (max-width: 768px) {
   :root {
     --main-padding: 2rem;
     --title-font-size: 2rem;
-    --description-font-size: 1.2rem;
+    --description-font-size: 1rem;
   }
 }
 
@@ -19,6 +23,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
 }
 
 .main {
@@ -28,13 +34,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: var(--title-font-size);
-  text-align: center;
+  color: var(--primary-color);
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .description {
@@ -42,4 +50,19 @@
   line-height: 1.5;
   font-size: var(--description-font-size);
   text-align: center;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -1,8 +1,9 @@
 :root {
-  --footer-bg-color: #333;
-  --footer-text-color: #fff;
+  --footer-bg-color: #2c3e50; /* Dark Blue */
+  --footer-text-color: #ecf0f1; /* Light Gray */
   --footer-padding: 1rem;
   --footer-font-size: 1rem;
+  --footer-font-family: 'Arial', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -19,4 +20,6 @@
   padding: var(--footer-padding);
   text-align: center;
   font-size: var(--footer-font-size);
+  font-family: var(--footer-font-family);
+  border-top: 1px solid #34495e; /* Slightly darker border */
 }
