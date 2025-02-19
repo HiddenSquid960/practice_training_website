@@ -1,0 +1,22 @@
+:root {
+  --footer-bg-color: #333;
+  --footer-text-color: #fff;
+  --footer-padding: 1rem;
+  --footer-font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --footer-padding: 0.5rem;
+    --footer-font-size: 0.8rem;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding: var(--footer-padding);
+  text-align: center;
+  font-size: var(--footer-font-size);
+}
