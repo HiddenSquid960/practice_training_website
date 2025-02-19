@@ -10,7 +10,6 @@ export default function Home() {
       <Head>
         <title>My Portfolio</title>
         <meta name="description" content="My personal portfolio website" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
@@ -18,7 +17,11 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to My Portfolio</h1>
         <p className={styles.description}>
-          Showcasing my projects and skills. Here you will find a collection of my work, including web development projects, design work, and other creative endeavors. Feel free to explore and learn more about what I do.
+          Showcasing my projects and skills. 
+          Here you will find a collection of my work, 
+          including web development projects, design work, 
+          and other creative endeavors. 
+          Feel free to explore and learn more about what I do.
         </p>
       </main>
 
